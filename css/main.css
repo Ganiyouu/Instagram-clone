@@ -1,0 +1,131 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.feed {
+  width: 50%;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.left-top-section {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.username {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.gray {
+  color: gray;
+  font-weight: 700;
+}
+
+.profile-picture img {
+  width: 35px;
+  height: auto;
+  border-radius: 9999px;
+}
+
+.middle-section {
+  border: 1px solid lightgray;
+}
+
+.picture {
+  width: 100%;
+  height: auto;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 0.4rem 0;
+}
+
+.left-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.left-icons .material-icons:hover,
+.left-icons .material-symbols-outlined:hover,
+.right-icons .material-icons:hover {
+  color: gray;
+}
+
+.likes,
+.name {
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.likes {
+  margin-bottom: 0.4rem;
+}
+
+.caption {
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.message {
+  font-size: 0.85rem;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-comments,
+.add-comment {
+  color: gray;
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.view-comments {
+  cursor: pointer;
+}
+
+.comment .material-icons {
+  color: gray;
+  font-size: small;
+  cursor: pointer;
+}
+
+/**media-queries**/
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .feed {
+    min-width: 100%;
+  }
+
+  right-sidebar {
+    width: 100px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
